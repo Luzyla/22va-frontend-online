@@ -1,0 +1,109 @@
+/* IMPORTAR FUENTES ONLINE */
+@import url('https://fonts.googleapis.com/css2?family=Updock&display=swap');
+
+/* SELECTOR UNIVERSAL
+Lo usamos principalmente para eliminar estilos que vienen por default! */
+* {
+    list-style: none;
+}
+
+/* POR ETIQUETA DE HTML */
+body {
+    color: #424242;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    line-height: 30px;
+}
+
+img {
+    width: 200px;
+}
+
+h1, h2, h3 {
+    font-family: 'Updock';
+    font-style: oblique;
+    text-align: center;
+    font-weight: bolder;
+    font-size: 80px;
+    line-height: 100px;
+}
+
+p {
+    line-height: 30px;
+    text-align: justify;
+    font-size: 18px;
+
+}
+
+/* POR CLASE */
+.contenedor-secc-sobremi {
+    background-color: crimson;
+    color: violet;
+}
+
+/* POR ID */
+#sobremi {
+    background-color: hsl(271, 76%, 53%);
+}
+
+/* 
+FUENTES DESCARGADAS. Agregar carpeta fonts.
+@font-face {
+    font-family: 'Updock', cursive;
+    src: local('Updock'), url(./fonts/Updock/Updock-Regular.ttf);
+    font-weight: 400;
+    font-style: normal;
+}
+
+ESPECIFICIDAD Y CASCADA
+1RO Selectores de Tipo (Etiquetas HTML) - son más generales
+2DA Selectores de Clase - son un poco más específicios
+3RA Selectores de ID - son específicos, un único elemento.
+
+#id > .class > etiqueta
+
+La cascada es de arriba hacia abajo.
+A misma importancia, gana por cascada el último.
+
+COLORES
+POR NOMBRE (Cada versión de CSS tiene su listado)
+    crimson;
+    violet;
+    pink;
+    blue;
+
+RGB (Red Green Blue)
+rojo rgb(255,0,0)
+verde rgb(0,255,0)
+azul rgb(0, 0, 255)
+negro rgb(0,0,0)
+blanco rgb(255,255,255)
+
+HEX (Hexadecimal)
+Seis posiciones
+Valores del 0-9 y A-F (A:10 ... F:15)
+#000000 negro #000
+#FFFFFF blanco  #FFF
+#FF0000 rojo
+#00FF00 verde
+#0000FF azul
+#424242 gris
+#454545 gris oscuro
+
+HSL (Hue Saturation Intensity - Matiz, Saturación, Intensidad)
+Hue 0-360
+S-I 0-100%
+hsl(0, 0%, 0%) negro
+hsl(0, 0%, 100%) blanco
+hsl(0, 100%, 50%) rojo
+
+ALPHA CHANNEL
+RGBA
+rgba(255,0,0, 0.8) rojo
+
+HSLA
+hsla(0, 0%, 0%, 0.5) negro
+
+HEXA
+#0000FF80 azul
+
+*/
