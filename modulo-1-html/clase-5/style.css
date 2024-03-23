@@ -1,0 +1,69 @@
+/* Usamos el Selector Universal para eliminar los estilos por defecto
+que agrega el navegador a los contenedores.
+margin: 0; padding: 0; 
+Lo declaramos al principio ya que luego al estilar los podremos sobreescribir.
+El selector universal es muy inespecífico y se sobreescribe fácilmente en la cascada */
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* La propiedad box-sizing viene por defecto en content-box para la mayoría de los contenedores.
+El contenedor está compuesto por tres partes (de adentro hacia afuera):
+content + padding + border
+Cuando box-sizing se encuentra por defecto, el widht y height que aplico al contenedor,
+se aplica en su totalidad a la parte interior content.
+Lo que agregue de padding y border se suma a esa medida, 
+generando que la medida total del contenedor sea mayor al widht y height que definí.
+Para resolver ese problema, aplicamos box-sizing: border box.
+Más sobre este tema en el Notion!
+*/
+
+.caja {
+    background-color: blue;
+    color: white;
+    /*     margin: 10px; */
+    padding: 10px;
+    border: 2px solid violet;
+    /* width: 200px;
+    height: 200px; */
+}
+
+.cajita {
+    background-color: aquamarine;
+    /* border: 2px solid violet; */
+    border-width: 2px;
+    border-style: dashed;
+    border-color: yellowgreen;
+    width: 100px;
+    height: 100px;
+    margin: auto;
+}
+
+.articulo {
+    background-color: blueviolet;
+    padding: 15px;
+}
+
+.titulo-principal {
+    padding: 5px 0;
+    /* padding top & bottom 5px y left & right 0 */
+    /* border: 2px dotted grey; */
+}
+
+.parrafo {
+    padding-top: 10px;
+}
+
+.texto {
+    background-color: aqua;
+    width: 300px;
+    margin: 10px;
+    padding: 10px;
+}
+
+.hola-clase {
+    background-color: crimson;
+}
