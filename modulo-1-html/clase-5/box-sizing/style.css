@@ -1,0 +1,23 @@
+div {
+    width: 200px;
+    height: 80px;
+    padding: 10px;
+    border: 8px solid red;
+    background: yellow;
+}
+
+.content-box {
+    box-sizing: content-box;
+    /* Ancho  total: 200px + (2 * 10px) + (2 * 8px) = 236px
+       Altura total: 80px + (2 * 10px) + (2 * 8px) = 116px
+       Ancho de la caja de contenido: 200px
+       Altura de la caja de contenido: 80px */
+}
+
+.border-box {
+    box-sizing: border-box;
+    /* Ancho total: 200px
+       Altura total: 80px
+       Ancho de la caja de contenido: 200px - (2 * 10px) - (2 * 8px) = 164px
+       Altura de la caja de contenido: 80px - (2 * 10px) - (2 * 8px) = 44px */
+}
