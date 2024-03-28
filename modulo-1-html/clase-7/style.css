@@ -1,0 +1,82 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    color: #424242;
+}
+
+.titulo {
+    margin: 20px 0 10px 0;
+    text-align: center;
+}
+
+.texto {
+    padding-bottom: 15px;
+}
+
+.contenedor {
+    width: 800px;
+    height: 400px;
+    background-color: lightslategray;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.cont-1 {
+    background-color: cadetblue;
+    height: 50px;
+    width: 100px;
+}
+
+.cont-2 {
+    background-color: blueviolet;
+    /* height: 50px; */
+    width: 100px;
+}
+
+.cont-3 {
+    background-color: green;
+    /* height: 50px; */
+    width: 100px;
+}
+
+.cont-4 {
+    background-color: orangered;
+    /* height: 50px; */
+    width: 100px;
+}
+
+.cont-5 {
+    background-color: greenyellow;
+    /* height: 50px; */
+    width: 100px;
+}
+
+.size-icon {
+    font-size: 30px;
+}
+
+.contenedor-icons {
+    display: flex;
+    flex-direction: column;
+}
+
+.center {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.icono-whatsapp {
+    /* en este caso aplica width porque estamos estilando una imagen */
+    width: 30px;
+}
+
+i {
+    padding: 10px 0;
+}
