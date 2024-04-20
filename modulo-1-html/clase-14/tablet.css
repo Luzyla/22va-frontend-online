@@ -1,0 +1,14 @@
+/* TABLET */
+/* @media (orientation: landscape) and (width < 976px) {} */
+@media (max-width: 976px) {
+    .container-cards {
+        flex-wrap: wrap;
+        justify-content: center;
+        max-width: 500px;
+        gap: 10px;
+    }
+
+    .card-color3 {
+        margin-bottom: 0;
+    }
+}
