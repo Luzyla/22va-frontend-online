@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Clase 17 - Formularios</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <nav>
+        <a href="#nombre">ir al formulario</a>
+    </nav>
+    <section>
+        <div class="padre">
+            <h1>Formulario</h1>
+            <p class="inicio">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Eligendi, dolore.</p>
+            <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Eligendi, dolore.</p>
+            <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Eligendi, dolore.</p>
+        </div>
+
+        <div class="container">
+            <ul>
+                <li>Elemento</li>
+                <li>Elemento</li>
+                <li>Elemento</li>
+            </ul>
+        </div>
+
+        <div class="otro-container">
+            <ul>
+                <li>Elemento 2</li>
+                <li class="un-li">Elemento 2</li>
+                <li>Elemento 2</li>
+            </ul>
+        </div>
+
+        <form action="https://dominio.com/send/" method="post" id="nombre">
+            <fieldset>
+                <legend>Datos personales</legend>
+                <label for="name">
+                    Nombre:
+                    <input type="text" id="name" name="name" placeholder="Escribí tu nombre" required>
+                </label>
+
+                <label for="age">
+                    Edad:
+                    <input type="number" id="age" name="age" placeholder="Escribí tu edad">
+                </label>
+
+                <label for="date">
+                    Fecha de nacimiento:
+                    <input type="date" id="date" name="date">
+                </label>
+            </fieldset>
+            <fieldset>
+                <legend>Log In</legend>
+                <label for="mail">
+                    Email:
+                    <input type="email" id="mail" name="mail" placeholder="Escribí tu email" required>
+                </label>
+
+                <label for="pass">
+                    Password:
+                    <input type="password" id="pass" name="pass" placeholder="Escribí tu contraseña">
+                </label>
+
+
+
+            </fieldset>
+            <fieldset>
+                <legend>Checkbox</legend>
+                <label for="check-1">
+                    Checkbox1:
+                    <input type="checkbox" id="check-1" name="check" class="soy-checkbox">
+                </label>
+
+                <label for="check-2">
+                    Checkbox2:
+                    <input type="checkbox" id="check-2" name="check" class="soy-checkbox" checked>
+                </label>
+            </fieldset>
+            <fieldset>
+                <legend>Difusión</legend>
+                <label for="radio">
+                    Radio:
+                    <input type="radio" id="radio" name="difusion" checked>
+                </label>
+
+                <label for="tv">
+                    TV:
+                    <input type="radio" id="tv" name="difusion">
+                </label>
+            </fieldset>
+
+            <div class="select">
+                <select name="pais" id="pais">
+                    <option value="argentina">Argentina</option>
+                    <option value="colombia">Colombia</option>
+                    <option value="brasil">Brasil</option>
+                    <option disabled selected>--Elige un país--</option>
+                </select>
+            </div>
+
+            <label for="opinion" class="textarea">
+                Tu opinión:
+                <textarea name="opinion" id="opinion" cols="" rows="" placeholder="Hola Vivi!!!!"></textarea>
+            </label>
+
+            <!-- <label for="titulo">
+                Agrega un color que te guste
+                <input type="text" name="titulo" id="titulo">
+            </label> -->
+
+            <label for="color">
+                Agrega un color que te guste
+                <input type="color" name="color" id="color">
+            </label>
+
+            <!-- <button>Enviar</button> -->
+            <input type="submit" value="Enviar" class="button">
+            <input type="reset" value="Borrar" class="button">
+
+            <!-- Así es como NO se debe hacer:
+                <div>
+                    <p>Check sin que funcione</p>
+                    <input type="checkbox" name="" id="">
+                </div>
+            -->
+
+        </form>
+    </section>
+
+</body>
+
+</html>

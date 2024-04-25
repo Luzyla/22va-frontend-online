@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Clase 16 - Formularios</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <section>
+        <h1>Formulario</h1>
+        <form action="https://dominio.com/send/" method="post" id="nombre">
+            <fieldset>
+                <legend>Datos personales</legend>
+                <label for="name">
+                    Nombre:
+                    <input type="text" id="name" name="name" placeholder="Escribí tu nombre">
+                </label>
+
+                <label for="age">
+                    Edad:
+                    <input type="number" id="age" name="age" placeholder="Escribí tu edad">
+                </label>
+
+                <label for="date">
+                    Fecha de nacimiento:
+                    <input type="date" id="date" name="date">
+                </label>
+            </fieldset>
+            <fieldset>
+                <legend>Log In</legend>
+                <label for="mail">
+                    Email:
+                    <input type="email" id="mail" name="mail" placeholder="Escribí tu email" required>
+                </label>
+
+                <label for="pass">
+                    Password:
+                    <input type="password" id="pass" name="pass" placeholder="Escribí tu contraseña">
+                </label>
+                <label for="check">
+                    Checkbox:
+                    <input type="checkbox" id="check" name="check">
+                </label>
+            </fieldset>
+            <fieldset>
+                <legend>Difusión</legend>
+                <label for="radio">
+                    Radio:
+                    <input type="radio" id="radio" name="difusion" checked>
+                </label>
+
+                <label for="tv">
+                    TV:
+                    <input type="radio" id="tv" name="difusion">
+                </label>
+            </fieldset>
+
+            <div class="select">
+                <select name="pais" id="pais">
+                    <option value="argentina">Argentina</option>
+                    <option value="colombia">Colombia</option>
+                    <option value="brasil">Brasil</option>
+                    <option disabled selected>--Elige un país--</option>
+                </select>
+            </div>
+
+            <label for="opinion" class="textarea">
+                Tu opinión:
+                <textarea name="opinion" id="opinion" cols="" rows="" placeholder="Hola Vivi!!!!"></textarea>
+            </label>
+
+            <input type="color" name="" id="">
+
+            <!-- <button>Enviar</button> -->
+            <input type="submit" value="Enviar" class="button">
+            <input type="reset" value="Borrar" class="button">
+
+            <!-- Así es como NO se debe hacer:
+                <div>
+                    <p>Check sin que funcione</p>
+                    <input type="checkbox" name="" id="">
+                </div>
+            -->
+
+        </form>
+    </section>
+
+</body>
+
+</html>

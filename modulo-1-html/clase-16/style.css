@@ -1,0 +1,57 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    color: blueviolet;
+}
+
+label {
+    display: block;
+    margin: 5px;
+}
+
+fieldset {
+    margin: 10px;
+    border: 2px solid blueviolet;
+    background-color: cornflowerblue;
+}
+
+legend {
+    text-align: center;
+}
+
+.select {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.textarea {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    resize: none;
+
+}
+
+textarea::placeholder, input::placeholder {
+    color: pink;
+    font-size: 10px;
+    padding: 0.4rem;
+}
+
+input {
+    width: 100px;
+    height: 15px;
+}
+
+.button {
+    background-color: aqua;
+    border-radius: 6px;
+    color: blanchedalmond;
+    border: 2px dotted darkcyan;
+}

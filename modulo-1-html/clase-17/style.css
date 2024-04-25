@@ -1,0 +1,171 @@
+/* Selector universal */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    color: blueviolet;
+    max-width: 50vw;
+    margin: 1rem auto;
+    background-color: #fafafa;
+}
+
+label {
+    display: block;
+    margin: 10px 0;
+    padding: 5px
+}
+
+fieldset {
+    margin: 10px;
+    border: 2px solid blueviolet;
+    background-color: cornflowerblue;
+}
+
+legend {
+    text-align: center;
+}
+
+.select {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.textarea {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    resize: none;
+}
+
+textarea::placeholder {
+    color: pink;
+    font-size: 10px;
+    padding: 0.4rem;
+}
+
+input::placeholder {
+    color: pink;
+    font-size: 10px;
+    padding: 0.4rem;
+}
+
+input {
+    width: 150px;
+    border-width: 1px;
+    outline: none;
+    border-radius: 15px;
+}
+
+input:not([type="checkbox"]) {
+    height: 30px;
+}
+
+/* Selector de Atributos */
+input[type="text"] {
+    color: crimson;
+}
+
+/* Selector hermano adyacente */
+h1+p {
+    margin-top: 10px;
+    padding: 10px;
+}
+
+/* .padre h1, .padre p {
+    esta manera tambien es valida y especifica
+} */
+
+/* Selectores Hermanos */
+h1~p {
+    color: green;
+}
+
+/* Selectores descendientes */
+.container li {
+    margin-left: 20px;
+    color: blue;
+}
+
+/* Selector descendiente directo */
+.otro-container>ul {
+    margin-left: 30px;
+}
+
+.un-li {
+    color: orangered;
+}
+
+.button {
+    background-color: black;
+    border-radius: 6px;
+    color: blanchedalmond;
+    border: 2px dotted darkcyan;
+    height: 2rem;
+    margin: 30px;
+}
+
+/* button:hover {} */
+
+.button:hover {
+    background-color: tomato;
+    cursor: pointer;
+}
+
+.button:active {
+    /* mientras mantengo apretado el boton me muestra otro icono del mouse */
+    cursor: progress;
+}
+
+input:focus {
+    border: 3px solid blueviolet;
+}
+
+li:nth-child(even) {
+    /* usa valores de odd (impar) o even (par) o números si es uno específico*/
+    font-size: 20px;
+}
+
+input[type="checkbox"]:checked {
+    box-shadow: 0 0 0 3px hotpink;
+    /* para cambiar el color de fondo del checkbox */
+    accent-color: green;
+}
+
+input:invalid {
+    background-color: red;
+}
+
+input:valid {
+    background-color: greenyellow;
+}
+
+p:after {
+    content: "- Fin";
+    font-size: 10px;
+}
+
+.inicio:before {
+    content: "🥳 ";
+    font-size: 15px;
+}
+
+input:not([type="email"]) {
+    border-bottom: 3px solid blue;
+}
+
+p:nth-of-type(3n) {
+    color: cornflowerblue;
+}
+
+input:placeholder-shown {
+    box-shadow: 0 0 0 3px burlywood;
+}
+
+#nombre:target {
+    background-color: yellow;
+}
