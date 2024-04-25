@@ -1,0 +1,214 @@
+IMPORTANTE ANTES DE COMENZAR... {
+    
+    * Cuando me refiero a la obligatoriedad de los atributos, lo hago con fines educativos, sugerencia y por experiencia
+    
+    * Esto quiere decir que en el desarrollo del día a día, ustedes son libres de crear las interfaces como deseen, pero recuerden el lema del curso:
+
+    "Que sea vea lindo, bonito y funcional... NO SIGNIFICÁ QUE ESTÉ BIEN ESTRUCTURADO"
+    "Un programador anónimo(2021). Buenos Aires, Argentina"
+
+    * Dicho esto, disfruten el apunte :D
+}
+
+-   -   -   -   -   -   -   -   -   -   -   -   -   -   -   -   -   -   -   -   -   -   -   -   -   -   -   -   -   
+
+*) FORM {
+
+    *) Los formularios son elementos que tienen campos que nos permiten obtener datos ingresados por el usuario
+
+    ?) El <form> es etiqueta de APERTURA Y CIERRE
+
+    Sintaxis => <form action="" method="" enctype=""></form>
+
+    *) ATRIBUTOS PRINCIPALES ( OBLIGATORIOS ) => [ action, method, enctype ] {
+
+        *) action: Url a donde se van a enviar o hacer submit de los datos del formulario {
+
+            NOTA: Si no tenemos un archivo para procesar la data, podemos completarlo con un #.
+        }
+
+        *) method: Acepta como valor un método de HTTP para establecer la forma en que se van a enviar los datos {
+
+            - get  => Manda los datos por query string (en la url, ej: nombre=valor&apellido=valor)
+            - post => Los datos viajan en el cuerpo del mensaje no se pueden ver
+
+            NOTA: Get y Post, son VERBOS de HTTP... ¿Pero qué significa? {
+
+                En resumen, GET es 'obtener' y POST 'enviar'.
+                Dependiendo de para que estemos implementando el form, utilizamos alguno de ellos.
+
+                * Si quisiéramos OBTENER los resultados de una búsqueda de google, utilizaríamos un GET.
+                * Si quisiéramos ENVIAR los datos de inicio de sesión de un usuario a una página web, utilizaríamos POST.
+
+                ( No es necesario que comprendan mucho esto ahora, pero me parece importante que lo tengan en cuenta porque saben lo intenso que es su profe :D )
+            }
+        }
+
+        *) enctype: Establece el tipo de media que vamos a enviar {
+            
+            - 'application/x-www-form-urlencoded'   => Envía DATOS       
+            - 'multipart/form-data'                 => Envía ARCHIVOS
+            - 'text/plain'                          => Envía texto plano 
+                    
+            NOTA: Si no completamos el atributo por defecto será un 'application/x-www-form-urlencoded'
+        }
+    } 
+
+    *) ATRIBUTOS SECUNDARIOS ( OPCIONALES ) => [ novalidate ] {
+
+        Por default, HTML5 nos provee de validaciones para sus inputs a la hora de hacer submit. Si se quiere saltear estas validaciones es tan simple como agregarle ese atributo al form. Esta es una práctica habitual, ya que seguramente queramos hacerlo mediante nuestras propias reglas de validación en un script aparte.
+    
+    }
+
+    Ejemplos {
+
+        <form action="processFormData.php" method="GET" enctype="application/x-www-form-urlencoded"></form>
+
+        <form action="processFormData.php" method="POST" enctype="multipart/form-data"></form>
+
+        <form action="processFormData.php" method="GET" enctype="application/x-www-form-urlencoded" novalidate></form>
+
+    }
+}
+
+*) LABEL {
+
+    *) Usando los labels le comunicamos al usuario que valor tiene que ingresar en cada campo. 
+    *) También nos permiten describirle el contenido de los campos a los lectores de pantalla para las personas no videntes.
+
+    ?) El label es etiqueta de APERTURA Y CIERRE    
+        Sintaxis => <label for=""></label>
+
+    *) ATRIBUTOS PRINCIPALES ( OBLIGATORIOS ) => [ for ] {
+
+        * for => Hace referencia al elemento que se quiere ETIQUETAR, como su nombre lo indica.
+
+        * NOTA IMPORTANTE {
+        
+            * El "for", para poder asociarse a un <input>, debe tener el mismo valor que los atributos "id" y "name" del input.
+
+            Ejemplo {
+                <form action="processFormData.php" method="GET" enctype="application/x-www-form-urlencoded">
+                    <label for="nombre">Nombre</label>
+                    <input type="text" name="nombre" id="nombre">
+                </form>
+            }
+        }
+    }
+}
+
+*) INPUTS {
+
+    *) Usando los inputs le permitimos al usuario que ingrese o seleccione datos
+
+    ?) El <input> es etiqueta de AUTOCIERRE   
+        Sintaxis => <input type="" name="" id="">
+
+    *) ATRIBUTOS PRINCIPALES ( OBLIGATORIOS ) => [ type, id, name ] {
+
+        * type => Define el tipo de <input> a utilizar.
+            Ej => text, email, password, url, file, search, radio, checkbox, color, range, time, date, datetime-local, etc
+        
+        * id => Define un identificador único (ID) que debe ser único en todo el documento. Su propósito es identificar el elemento cuando se asocia a su <label> o cuando se hace referencia en un script u estilos css.
+
+        * name => Define el nombre de la variable del <input> cuando se lo trabaje con un script para capturar la información enviada por el usuario
+
+        * NOTA IMPORTANTE {
+
+            * El "id" y el "name", para poder asociarse a su label, deben tener el mismo valor que el atributo "for" del label.
+
+            Ejemplo {
+                <form action="processFormData.php" method="GET" enctype="application/x-www-form-urlencoded">
+                    <label for="nombre">Nombre</label>
+                    <input type="text" name="nombre" id="nombre">
+                </form>
+            }
+        }
+
+        *) ATRIBUTOS SECUNDARIOS ( OPCIONALES ) => [ placeholder, maxLenght, value, max, min, required, etc ]
+    }
+}
+
+*) TEXTAREA {
+
+    ?) El TEXTAREA es etiqueta de APERTURA Y CIERRE    
+        Sintaxis => <textarea name="" id=""></textarea>
+
+    *) ATRIBUTOS PRINCIPALES ( OBLIGATORIOS ) => [ name, id ] {
+
+        * id => Define un identificador único (ID) que debe ser único en todo el documento. Su propósito es identificar el elemento cuando se asocia a su <label> o cuando se hace referencia en un script u estilos css.
+
+        * name => Define el nombre de la variable del <textarea> cuando se lo trabaje con un script para capturar la información enviada por el usuario
+
+        * NOTA IMPORTANTE {
+        
+            * El "id" y el "name", para poder asociarse a su label, deben tener el mismo valor que el atributo "for" del label.
+
+            Ejemplo {
+                <form action="processFormData.php" method="GET" enctype="application/x-www-form-urlencoded">
+                    <label for="comment">Dejanos tu comentario</label>
+                    <textarea name="comment" id="comment"></textarea>
+                </form>
+            }
+        }
+    }
+
+    *) ATRIBUTOS SECUNDARIOS ( OPCIONALES ) => [ placeholder, cols, rows]
+}
+
+*) FIELDSET & LEGEND {
+
+    *) Usando los <fieldset> podemos agrupar los campos del formulario. 
+    *) Podemos agregar un título al <fieldset> utilizando la etiqueta <legend>
+
+    *) Resulta util de implementar cuando trabajamos con múltiples opciones a elegir por el usuario 
+            { <select>| <input type="radio"> | <input type="checkbox" }
+
+    ?) El fieldset es etiqueta de APERTURA Y CIERRE    
+        Sintaxis => <fieldset></fieldset>
+
+    ?) El legend es etiqueta de APERTURA Y CIERRE    
+        Sintaxis => <legend></legend>
+
+    *) NINGUNA POSEE ATRIBUTOS OBLIGATORIOS
+
+        Ejemplo {
+            <form action="processFormData.php" method="GET" enctype="application/x-www-form-urlencoded">
+
+                <fieldset>
+                    <legend>Información Personal</legend>
+                        <label for="name">Nombre</label>
+                        <input type="text" name="name" id="name">
+
+                        <label for="surname">Apellido</label>
+                        <input type="text" name="surname" id="surname">    
+                </fieldset>
+
+                <button type="submit">Enviar</button>
+            </form>
+        }
+}
+
+*) BUTTON {
+
+    ?) El button es etiqueta de APERTURA Y CIERRE    
+        Sintaxis => <button type=""></button>
+
+    *) ATRIBUTOS PRINCIPALES ( OBLIGATORIOS ) => [ type ] {
+
+        * type => Indica que tipo de botón debe ser. En este caso, como es un botón de acción de envío el valor será "submit"
+
+        Ejemplo {
+            <form action="processFormData.php" method="GET" enctype="application/x-www-form-urlencoded">
+
+                <label for="nombre">Nombre</label>
+                <input type="text" name="nombre" id="nombre">
+
+                <label for="apellido">Apellido</label>
+                <input type="text" name="apellido" id="apellido">
+
+                <button type="submit">Enviar</button>
+            </form>
+        }
+    }
+}

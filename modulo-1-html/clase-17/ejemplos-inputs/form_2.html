@@ -1,0 +1,189 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formularios - 2</title>
+    <style>
+
+        * {
+            box-sizing: border-box;
+            margin: 0;
+            padding: 0;
+        }
+
+        .form {
+            max-width: 450px;
+            margin: 0 auto;
+            border: 1px solid black;
+            border-radius: 6px;
+            padding: 30px;
+        }
+
+        section {
+            margin-bottom: 4em;
+        }
+
+        h1 {
+            text-align: center;
+            margin-bottom: 30px;
+        }
+
+        header {
+            margin-top: 100px;
+        }
+
+        div {
+            width: 100%;
+            display: flex;
+            flex-direction: column;
+        }
+
+        label, div, p {
+            margin: 10px 0;
+        }
+
+        button {
+            padding: 10px;
+            font-size: 1.2em;
+            margin-top: 10px;
+        }
+
+        fieldset, input, textarea {
+            padding: 10px;
+            border-radius: 4px;
+            margin: 10px 0;
+        }
+
+        fieldset > div {
+            display: block;
+        }
+
+        input[type="file"] {
+            padding: 0;
+        }
+
+        input[type="color"] {
+            padding: 5px 10px;
+            width: 100px;
+            height: 50px;
+        }
+
+        input[type="range"] {
+            padding: 0;
+        }
+
+        p {
+            font-style: italic;
+            font-weight: bold;
+        }
+
+        .search {
+            display: flex;
+            flex-direction: row;
+            align-items: center;
+        }
+
+        #comment {
+            resize: none;
+            height: 100px;
+        }
+
+        #volume_values {
+            display: flex;
+            justify-content: space-between;
+            height: auto;
+            overflow: hidden;
+            margin: 5px 0; 
+            padding: 0;
+        }
+
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Formularios (Selectores)</h1>
+    </header>
+    <main>
+        <section>
+            <form action="#" method="get" enctype="application/x-www-form-urlencoded" class="form">
+
+                    <fieldset>
+                        <legend>Estado Civil</legend>
+                        <div>
+                            <label for="single">Soltero</label>
+                            <input type="radio" id="single" name="civil-state" />
+                        </div>
+                        <div>
+                            <label for="married">Casado</label>
+                            <input type="radio" id="married" name="civil-state"/>
+                        </div>
+                    </fieldset>
+                    <fieldset>
+                        <legend>Mascotas</legend>
+                        <div>
+                            <label for="dog">Perro</label>
+                            <input type="checkbox" id="dog" name="pet" value="dog" />
+                        </div>
+                        <div>
+                            <label for="cat">Michi</label>
+                            <input type="checkbox" id="cat" name="pet" value="cat" />
+                        </div>
+                        <div>
+                            <label for="turtle">Tortuga</label>
+                            <input type="checkbox" id="turtle" name="pet" value="turtle" />
+                        </div>
+                        <div>
+                            <label for="fish">Pez</label>
+                            <input type="checkbox" id="fish" name="pet" value="fish" />
+                        </div>
+                    </fieldset>
+                    <fieldset>
+                        <legend>Seleccione su talle</legend>
+                        <select name="sizes" id="size-select">
+                            <option value="">- - - -</option>
+                            <option value="xs">XS</option>
+                            <option value="s">S</option>
+                            <option value="m">M</option>
+                            <option value="l">L</option>
+                            <option value="xl">XL</option>
+                            <option value="xxl">XXL</option>
+                            <option value="xxxl">XXXL</option>
+                        </select>
+                    </fieldset>
+
+                    <div>
+                        <label for="color">Selecciona tu color favorito</label>
+                        <input type="color" id="color" name="color" value="#6d41a1" />
+                    </div>
+                    <div>
+                        <label for="volume">Volumen</label>
+                        <input type="range" id="volume" name="volume" min="0" max="100" step="25" list="volume_values"/>
+                        <datalist id="volume_values">
+                            <option>0</option>
+                            <option>50</option>
+                            <option>100</option>
+                        </datalist>
+                    </div>
+                    <div>
+                        <label for="appt">Selecciona un horario para la reunión</label>
+                        <p>* El horario de atencion, es de 10hs a 18hs *</p>
+                        <input type="time" id="appt" name="appt" min="10:00" max="18:00" value="10:00" required /> 
+                        
+                    </div>
+                    <div>
+                        <label for="date">Seleccione la fecha</label>
+                        <input type="date" name="date" id="date">
+                    </div>
+                    <div>
+                        <label for="date">Seleccione la Fecha y Horario</label>
+                        <input type="datetime-local" name="date" id="date">
+                    </div>
+                    <div>
+                        <button type="submit">Enviar (GET)</button>
+                    </div>
+            </form>
+        </section>
+    </main>
+</body>
+</html>
