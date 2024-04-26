@@ -1,0 +1,177 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    font-family: system-ui, sans-serif;
+}
+
+/* General Styles */
+
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    background-color: #333;
+    padding: 0 20px;
+}
+
+label, input {
+    display: block;
+    width: 100%;
+}
+
+picture {
+    display: flex;
+    align-items: center;
+}
+
+img {
+    width: 100%;
+}
+
+/* FORM */
+
+.form {
+    width: 100%;
+    max-width: 375px;
+    background-color: #222;
+    padding: 2rem;
+    border-radius: 6px;
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    width: 100%;
+}
+
+/* FORM - INPUT & LABEL*/
+
+label {
+    color: white;
+    font-size: 1.2em;
+}
+
+label[for="remember"] {
+    display: flex;
+    font-size: 14px;
+    line-height: 16px;
+}
+
+input {
+    border: 0;
+    margin-top: 6px;
+    border-radius: 4px;
+    padding: 8px 10px;
+    height: 40px;
+    font-size: 1em;
+}
+
+input[type="checkbox"] {
+    display: inline-block;
+    margin-top: 0;
+    margin-right: 6px;
+    height: 16px;
+    width: 16px;
+    accent-color: #83CD29;
+}
+
+input[type="checkbox"]:focus {
+    outline: 0;
+}
+
+input:focus {
+    outline: 2px solid #83CD29;
+}
+
+input:invalid {
+    outline: 2px solid crimson;
+}
+
+/*  FORM - BUTTONS */
+
+.btn {
+    display: block;
+    border: 0;
+    border-radius: 4px;
+    padding: 14px;
+    width: 100%;
+    background-color: #83CD29;
+    color: white;
+    text-transform: uppercase;
+    font-weight: bold;
+}
+
+.form-login-buttons-socials {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 14px;
+    border-top:  2px solid gray;
+    padding-top: 20px;
+    margin-top: 20px;
+}
+
+.form-login-buttons-socials > a.btn-facebook {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 5px;
+    text-decoration: none;
+    color: white;
+    background-color:#2050b3;
+    text-align: center;
+    text-transform: none;
+}
+
+.form-login-buttons-socials > a.btn-google {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 5px;
+    text-decoration: none;
+    color: white;
+    background-color:#dc143c;
+    text-transform: uppercase;
+    text-transform: none;
+}
+
+a.btn-facebook:hover {
+    background-color:#2050b3cb;
+    transition: .3s ease background-color;
+    cursor: pointer;
+}
+
+a.btn-google:hover {
+    background-color: #dc143ccb;
+    transition: .3s ease background-color;
+    cursor: pointer;
+}
+
+button:hover {
+    background-color: #83cd29cb;
+    transition: .3s ease background-color;
+    cursor: pointer;
+}
+
+
+/* MEDIA QUERYS */
+
+@media (width >= 768px) {
+    .form {
+        display: flex;
+        gap: 40px;
+        max-width: 900px;
+        align-items: center;
+    }
+
+    button {
+        width: 100px;
+    }
+
+    .form-login-buttons-socials {
+        flex-wrap: nowrap;
+        flex-direction: row;
+    }
+}
