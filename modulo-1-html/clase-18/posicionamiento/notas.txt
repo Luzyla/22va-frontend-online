@@ -1,0 +1,41 @@
+* Posicionamiento {
+    - Los elementos en linea, se van a posicionar de IZQUIERDA A DERECHA.
+
+    - Los elementos en bloque, se van a posicionar uno debajo de otro de ARRIBA HACIA ABAJO. 
+
+    - Sin saberlo, trabajamos constantemente con posicionamiento por default 'static', donde todos los elementos aparecen con un orden natural segun donde esten colocados en nuestro HTML
+}
+
+* Propiedad Position {
+
+        - static	=> Posicionamiento estatico. Utiliza el orden natural de los elementos HTML.
+        - relative  => Posicionamiento relativo. Los elementos se mueven ligeramente en base a su posición estática.
+        - absolute  => Posicionamiento absoluto. Los elementos se colocan en base al contenedor padre.
+        - fixed	    => Posicionamiento fijo. Idem al absoluto, pero aunque hagamos scroll no se mueve.
+        - sticky	=> Posicionamiento «pegado». Similar al relativo, usado para pegar menús a la parte superior.
+
+    * Si utilizamos un modo de posicionamiento diferente al estático (absolute, fixed, sticky o relative), podemos utilizar una serie de propiedades para modificar la posición de un elemento. {
+
+        - top	   => Empuja el elemento una distancia desde la parte superior hacia el inferior.
+        - bottom   => Empuja el elemento una distancia desde la parte inferior hacia la superior.
+        - left     => Empuja el elemento una distancia desde la parte izquierda hacia la derecha.
+        - right    => Empuja el elemento una distancia desde la parte derecha hacia la izquierda.
+        - z-index  => Coloca un elemento en el eje de profundidad, más cerca o más lejos del usuario.
+    } 
+}
+
+* Posicionamiento relativo ( position: relative ){
+    Si utilizamos la palabra clave relative activaremos el modo de posicionamiento relativo, que es el más sencillo de todos. En este modo, los elementos se colocan exactamente igual que en el posicionamiento estático (permanecen en la misma posición), pero dependiendo del valor de las propiedades top, bottom, left o right variaremos ligeramente la posición del elemento.
+}
+
+* Posicionamiento absoluto ( position: absolute ) {
+    Si utilizamos la palabra clave absolute estamos indicando que el elemento pasará a utilizar posicionamiento absoluto, que no es más que utilizar el documento completo como referencia.
+
+    Coloca los elementos utilizando como punto de origen el primer contenedor con posicionamiento diferente a estático.
+
+    Por ejemplo, si el contenedor padre tiene posicionamiento estático, pasamos a mirar el posicionamiento del padre del contenedor padre, y así sucesivamente hasta encontrar un contenedor con posicionamiento no estático o llegar a la etiqueta <body>, en el caso que se comportaría como el ejemplo anterior.
+}
+
+* Posicionamiento fijo ( position: fixed ) {
+    El posicionamiento fijo es hermano del posicionamiento absoluto. Funciona exactamente igual, salvo que hace que el elemento se muestre en una posición fija dependiendo de la región visual del navegador. Es decir, aunque el usuario haga scroll y se desplace hacia abajo en la página web, el elemento seguirá en el mismo sitio posicionado.
+}
