@@ -1,0 +1,94 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: system-ui, sans-serif;
+  color:  white;
+
+  scroll-behavior: smooth;
+  scrollbar-width: thin;
+  scrollbar-color: #6e0c1f gray;
+}
+
+a {
+  text-decoration: none;
+}
+
+.hero__nav_links__link {
+  background-color: #6e0c1f;
+  padding: 5px;
+  border-radius: 6px;
+}
+
+.hero {
+  min-height: 100vh;
+  background: url('https://occ-0-1185-1740.1.nflxso.net/dnm/api/v6/6AYY37jfdO6hpXcMjf9Yu5cnmO0/AAAABdPkQ82T8eww-as-LUsmyvfENhdDbFJUFTvtzX8JwTTqoNeAU8mHxDsT270eZb_JpYTruO7oTN9gc7augBZ-mA2NeA7DP_J84Ymg.jpg?r=afa&quot');
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+
+  position: relative;
+}
+
+.hero__logo {
+  display: block;
+  background-image: url('./logo.svg');
+  background-repeat: no-repeat;
+  background-size: contain;
+  height: 100%;
+  width: 100%;
+}
+
+.hero__nav {
+  padding: 20px;
+  height: 80px;
+  display: flex;
+  align-items: center;
+}
+
+.hero__nav_links {
+  list-style: none;
+  display: flex;
+  gap: 20px;
+}
+
+.hero__nav_links__link {
+  text-transform: uppercase;
+  font-weight: bold;
+}
+
+section {
+  height: 50vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+main > :nth-child(odd) {
+  background-color: #6e0c1f;
+}
+
+main > :nth-child(even) {
+  background-color: #808080;
+}
+
+
+/* Wave SVG */
+/* .wave {
+  position: absolute;
+  bottom: -10px;
+  width: 100%;
+} */
+
+/* Wave CSS  */
+/* .wave-css {
+  position: absolute;
+  bottom: -10px;
+  width: 100%;
+  background: #6e0c1f;
+  height: 25vh;
+  border-bottom-left-radius: 50% 20%;
+  border-bottom-right-radius: 50% 20%;
+  transform: rotate(180deg);
+} */
+
