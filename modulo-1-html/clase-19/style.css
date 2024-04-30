@@ -1,0 +1,110 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.container {
+    border: 1px solid black;
+    color: #fafafa;
+    /* margin: 10px; */
+}
+
+.box {
+    width: 150px;
+    height: 150px;
+}
+
+/* TRANSICIONES */
+.box1 {
+    background-color: lightseagreen;
+    transition: 3s ease background-color;
+}
+
+.box1:hover {
+    background-color: blue;
+    color: lightseagreen;
+}
+
+.box2 {
+    background-color: blueviolet;
+    /* si uso solo transition, es un shortcut donde uso duracion, timing y property */
+    transition: 2s ease-out width, 2s ease-out height;
+}
+
+.box2:hover {
+    width: 50px;
+    height: 50px;
+}
+
+.box3 {
+    background-color: darkorange;
+    /* la propiedad que quiero modificar */
+    transition-property: border;
+    /* el tiempo en el que quiero que aplique el cambio */
+    transition-duration: 2s;
+    /* como afectar la velocidad de la transición */
+    transition-timing-function: ease-out;
+    /* si quiero demorar el inicio de la transicion, aplico delay */
+    transition-delay: 1s;
+}
+
+.box3:hover {
+    /* background-color: crimson; */
+    border: 5px solid crimson;
+}
+
+.box4 {
+    background-color: cornflowerblue;
+    transition: width 4s cubic-bezier(.21, 1.26, .53, -0.15);
+}
+
+.box4:hover {
+    width: 300px;
+}
+
+.box5 {
+    background-image: url(/images/carreras_backend_2021.png);
+    background-size: cover;
+    transition: background-image 8s ease-in-out;
+}
+
+.box5:hover {
+    background-image: url(/images/carreras_frontend_2021.png);
+}
+
+/* TRANSFORMACIONES */
+.box6 {
+    background-color: crimson;
+    transform: translate(100px, 100px);
+}
+
+.box7 {
+    background-color: green;
+    transform: rotate(135deg);
+    transition-property: transform, background-color;
+    transition-timing-function: ease-in-out;
+    transition-duration: 3s;
+    /* manera comprimida de definir lo mismo: */
+    /* transition: 3s ease-in-out transform, 3s ease-in-out background-color; */
+}
+
+.box7:hover {
+    transform: rotate(-90deg);
+    background-color: aquamarine;
+}
+
+.box8 {
+    background-color: orchid;
+    transform: scale(2.5) translate(150px, 50px);
+}
+
+.box9 {
+    background-color: midnightblue;
+    transform: skew(50deg, 300deg) translate(250px, 100px);
+}
+
+.box10 {
+    background-color: mediumslateblue;
+    transform: rotateX(125deg) rotateY(50deg) rotateZ(75deg);
+}
