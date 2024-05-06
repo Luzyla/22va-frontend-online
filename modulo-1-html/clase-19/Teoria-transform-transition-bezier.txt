@@ -1,0 +1,15 @@
+Transitions 
+https://cssreference.io/property/transition/
+https://cssreference.io/property/transition-delay/
+https://cssreference.io/property/transition-duration/
+https://cssreference.io/property/transition-property/
+https://cssreference.io/property/transition-timing-function/
+
+Transform
+https://cssreference.io/property/transform/
+
+Cubic-Bezier
+https://cubic-bezier.com/#.17,.67,.83,.67
+
+Ejemplos Practicos
+https://codepen.io/julian-pacilio/pen/OJGGYWg?editors=1100
