@@ -1,0 +1,40 @@
+@import url('https://fonts.googleapis.com/css2?family=Kalam:wght@300;400;700&family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
+
+:root {
+    --color-uno: crimson;
+    --color-dos: #fafafa;
+    --color-tres: darkslategrey;
+    --color-cuatro: blanchedalmond;
+
+    --fuente-general: Montserrat;
+    --fuente-acento: Kalam;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    text-decoration: none;
+}
+
+header {
+    background-color: var(--color-uno);
+    height: 100px;
+}
+
+nav {
+    color: var(--color-dos);
+    font-family: var(--fuente-acento);
+    text-align: center;
+    font-size: 30px;
+}
+
+main {
+    background-color: var(--color-uno);
+    height: 75vh;
+}
+
+div {
+    background-color: var(--color-cuatro);
+    height: 200px;
+}

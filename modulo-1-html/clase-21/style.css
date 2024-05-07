@@ -1,0 +1,121 @@
+/* no es una práctica recomendada resumir nombres */
+.bx {
+    background-color: blueviolet;
+}
+
+/* buena práctica nombres entendibles */
+.button {
+    background-color: blueviolet;
+}
+
+/* ---------------------------------------- */
+
+/* no es una práctica recomendada nombres largos */
+.este-es-un-contenedor-de-una-lista-desordenada {
+    list-style-type: none;
+}
+
+/* buena práctica nombres relativamente cortos y entendibles */
+.contenedor-nav {
+    font-family: 'Courier New', Courier, monospace;
+}
+
+/* ---------------------------------------- */
+
+/* no es una práctica recomendada utilizar otras Cases */
+.ButtonStyle {
+    color: #fafafa;
+}
+
+/* buena práctica usar kebab-case */
+.button-style {
+    color: blanchedalmond;
+}
+
+/* ---------------------------------------- */
+
+/* no es una práctica recomendada utilizar tags html genericas  */
+div {
+    margin: 10px;
+}
+
+/* buena práctica utilizar clases  */
+.container {
+    margin: 10px;
+}
+
+/* ---------------------------------------- */
+
+/* no es una práctica recomendada usar selectores complejos */
+header nav ul li a {
+    text-decoration: none;
+}
+
+/* es buena práctica utilizar una clase por selector */
+.link {
+    text-decoration: none;
+}
+
+/* ---------------------------------------- */
+
+/* no es una práctica recomendada  */
+.active {
+    background-color: lightcoral;
+}
+
+/* es buena práctica  */
+.is-active {
+    background-color: lightcoral;
+}
+
+/* ---------------------------------------- */
+
+/* no es una práctica recomendada  */
+.button {
+    background-color: aqua;
+}
+
+.Button {
+    font-size: 20px;
+    font-weight: bold;
+}
+
+/* ---------------------------------------- */
+
+/* es buena práctica  */
+.button {
+    background-color: aqua;
+}
+
+.button-primary {
+    font-size: 20px;
+    font-weight: bold;
+}
+
+/* ---------------------------------------- */
+
+/* no es una práctica recomendada  */
+.contenedor-uno {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.contenedor-dos {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+/* es buena práctica  */
+.alineacion-centro {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+
+/* -------------------------
+    METODOLOGÍA BEM
+------------------------- */
+/* [bloque]__[elemento]--[modificador] */
