@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Responsive Menu :: Target</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    <header>
+        <nav class="nav-menu" id="menu">
+            <a href="#" class="nav-menu-logo"></a>
+            <div class="nav-menu-controls">
+                <a href="#menu" class="open"></a>
+                <a href="#" class="close"></a>
+            </div>
+            <ul class="nav-menu-menulinks">
+                <li>
+                    <a href="#nosotros">Nosotros</a>
+                </li>
+                <li>
+                    <a href="#contacto">Contacto</a>
+                </li>
+                <li>
+                    <a href="#">Link</a>
+                </li>
+                <li>
+                    <a href="#">Link</a>
+                </li>
+                <li>
+                    <a href="#">Link</a>
+                </li>
+            </ul>
+        </nav>
+    </header>
+    <main>
+        <section id="nosotros">
+            <h2>Nosotros</h2>
+            <p>
+                Lorem ipsum dolor sit, amet consectetur adipisicing elit. Error, consequatur, temporibus sapiente, assumenda neque eum tenetur blanditiis dolores nam iusto perspiciatis incidunt dicta. Obcaecati dignissimos cumque expedita eveniet saepe tempore tempora delectus voluptatibus tenetur quod.
+            </p>
+        </section>
+        <section id="contacto">
+            <h2>Contacto</h2>
+            <div class="form-container">
+                <div class="form-image">
+                    <h2>Dejanos tu consulta</h2>
+                    <picture>
+                        <img src="./img/contact.svg" alt="logo">
+                    </picture>
+                </div>
+                <form action="#" method="#" enctype="application/x-www-form-urlencoded" novalidate >
+
+                    <div class="field">
+                        <label for="name">Nombre
+                            <input type="name" name="name" id="name">
+                        </label>
+                    </div>
+
+                    <div class="field">
+                        <label for="lastname">Apellido
+                            <input type="name" name="lastname" id="lastname">
+                        </label>
+                    </div>
+
+                    <div class="field">
+                        <label for="email">Email
+                            <input type="email" name="email" id="email">
+                        </label>
+                    </div>
+
+                    <div class="field">
+                        <label for="coment">Comentario
+                            <textarea name="coment" id="coment"></textarea>
+                        </label>
+                    </div>
+        
+                    <div class="form-button">
+                        <button class="btn" type="submit">Enviar</button>
+                    </div>
+                </form>
+            </div>
+        </section>
+    </main>
+    <footer>
+        <p>Todos los derechos reservados &copy; 2024</p>
+    </footer>
+</body>
+</html>
+

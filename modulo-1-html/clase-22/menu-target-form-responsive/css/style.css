@@ -1,0 +1,270 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+:root {
+    --primary-bgc: #5144a5;
+    --secondary-bgc: #3e347f;
+    --button-bgc: #deb887;
+}
+
+html {
+    scroll-behavior: smooth;
+    font-family: system-ui, sans-serif;
+    color: white;
+}
+
+/* General Config */
+
+img {
+    width: 100%
+}
+
+body {
+    background-color: #555;
+}
+
+ul {
+    list-style: none;
+}
+
+section {
+    padding: 40px 20px;
+    max-width: 800px;
+    margin: 0 auto;
+}
+
+label, input, textarea {
+    display: block;
+    width: 100%;
+}
+
+textarea {
+    resize: none;
+    height: 100px;
+}
+
+footer {
+    background-color: var(--primary-bgc);
+    height: 60px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 14px;
+}
+
+/* Navbar */
+
+.nav-menu {
+    height: 60px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    background-color: var(--primary-bgc);
+}
+
+.nav-menu-logo {
+    display: block;
+    width: 40px;
+    background-image: url(../img/logo.svg);
+    background-position: center;
+    background-size: contain;
+    background-repeat: no-repeat;
+    margin: 10px;
+}
+
+.nav-menu-controls {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+}
+
+.nav-menu-controls .open{
+    display: block;
+    height: 35px;
+    width: 35px;
+    background-image: url(../img/open.svg);
+    background-position: center;
+    background-size: contain;
+    background-repeat: no-repeat;
+    margin: 10px;
+}
+
+.nav-menu-controls .close{
+    height: 35px;
+    width: 35px;
+    background-image: url(../img/close.svg);
+    background-position: center;
+    background-size: contain;
+    background-repeat: no-repeat;
+    margin: 10px;
+}
+
+.nav-menu-menulinks {
+    display: none;
+    flex-direction: column;
+    gap: 20px;
+    background-color: var(--primary-bgc);
+    width: 100%;
+    height: calc(100vh - 60px);
+    padding: 10px;
+    z-index: 2;
+}
+
+.nav-menu-menulinks li a {
+    text-decoration: none;
+    color: white;
+    font-size: 1.1em;
+    font-weight: 500;
+}
+
+.close {
+    display: none;
+}
+
+#menu:target .nav-menu-menulinks {
+    display: flex;
+}
+
+#menu:target .open {
+    display: none;
+}
+
+#menu:target .close {
+    display: block;
+}
+
+/* Nosotros */
+
+section#nosotros h2, section#contacto h2   {
+    text-align: center;
+    margin-bottom: 40px;
+    font-size: 2em
+}
+
+/* Contacto */
+
+.form-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding: 40px;
+    margin: 0 auto;
+    gap: 40px;
+    background-color: var(--primary-bgc);
+    box-shadow: 0px 0px 10px 5px rgba(0, 0, 0, 0.21);
+    border-radius: 8px;
+
+}
+
+.form-image {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+}
+
+picture {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.field {
+    width: 100%;
+}
+
+label {
+    margin: 10px 0;
+}
+
+input, textarea {
+    border: 0;
+    margin: 5px 0;
+    padding: 8px;
+    border-radius: 6px;
+}
+
+.form-button {
+    width: 100%;
+}
+
+.btn {
+    display: block;
+    width: 100%;
+    border: 0;
+    border-radius: 6px;
+    padding: 10px;
+    background-color: var(--button-bgc);
+    color: rgb(255, 255, 255);
+    font-weight: bold;
+    font-size: 1.1em;
+    margin-top: 20px;
+    cursor: pointer;
+}
+
+@media screen and (min-width: 600px) {
+    .form-container {
+        flex-direction: row;
+    }
+
+    .form-image {
+        width: 50%;
+    }
+
+    form {
+        width: 50%;
+        align-items: flex-start;
+    }
+}
+
+@media screen and (min-width: 768px) {
+
+    .nav-menu-controls {
+        display: none;
+    }
+
+    .nav-menu-menulinks {
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        justify-content: flex-end;
+        height: auto;
+        width: 50%;
+    }
+
+    #nosotros p {
+        text-align: center;
+    }
+}
+
+
+
+
+/* .link {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.link a {
+    display: block;
+    text-decoration: none;
+}
+
+.img-container {
+    width: 50px;
+}
+ */
+
+
