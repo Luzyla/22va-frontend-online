@@ -1,0 +1,134 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.container {
+    border: 1px solid black;
+    color: #fafafa;
+    /* margin: 10px; */
+}
+
+.box {
+    width: 150px;
+    height: 150px;
+}
+
+/* NAV BAR FIJA */
+.box1 {
+    background-color: lightseagreen;
+    position: fixed;
+    z-index: 10;
+    top: 0;
+    width: 100%;
+    height: 50px;
+}
+
+/* BOXES EN CAPAS (LAYERS) CON z-index */
+.box2 {
+    background-color: blueviolet;
+    position: fixed;
+    z-index: 2;
+    top: 50px;
+    left: 60px;
+}
+
+.box3 {
+    background-color: darkorange;
+    position: fixed;
+    z-index: 3;
+    top: 70px;
+    left: 80px;
+}
+
+/* BOX POR FUERA DE LA VENTANA */
+.box4 {
+    background-color: cornflowerblue;
+    position: absolute;
+    z-index: 1;
+    top: -50px;
+    left: -150px;
+    /* overflow hidden se usa para ocultar todo lo que 'sobresale' de mi ventana.
+    Asi evito un scroll horizontal o que se muestre un fondo blanco con una box de color. */
+    overflow: hidden;
+}
+
+/* BOX POSICION ABSOLUTA */
+.box5 {
+    background-color: crimson;
+    position: absolute;
+    z-index: 1;
+    top: 30px;
+    left: 40px;
+}
+
+/* BOX POSICION RELATIVA */
+.box6 {
+    background-color: green;
+    position: relative;
+    z-index: 4;
+    top: 130px;
+    left: 40px;
+}
+
+ul {
+    display: flex;
+    list-style: none;
+    justify-content: flex-end;
+}
+
+li {
+    padding: 15px;
+}
+
+/* REGLA DE ORO
+Si uso position: absolute, el PADRE tiene que tener position distinta a static (en general usamos relative, porque fixed no va para esto!)
+
+Position habilita usar:
+top, bottom, left, right, z-index */
+
+/* BOX POSICIONADA CON MEDIDAS RELATIVAS */
+.box7 {
+    background-color: lightseagreen;
+    position: absolute;
+    top: 50%;
+    right: 50%;
+}
+
+/* OVERLAY */
+.box8 {
+    background-color: #8a2be280;
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: 11;
+}
+
+/* MODAL */
+.box9 {
+    background-color: #fafafa;
+    border: 2px solid blueviolet;
+    border-radius: 15px;
+    position: fixed;
+    z-index: 12;
+    top: 35%;
+    left: 35%;
+    width: 45vw;
+    height: 35vh;
+}
+
+/* BADGET */
+.box10 {
+    background-color: cornflowerblue;
+    position: relative;
+    z-index: 13;
+    top: 38%;
+    left: 65%;
+    width: 60px;
+    height: 60px;
+    border-radius: 10px;
+    padding: 5px;
+}
