@@ -1,0 +1,18 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.fondo {
+    background-color: blueviolet;
+    height: 300px;
+}
+
+.hidden {
+    display: none;
+}
+
+.cambiar-background {
+    background-color: crimson;
+}
