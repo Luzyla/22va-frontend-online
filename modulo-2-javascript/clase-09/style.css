@@ -1,0 +1,148 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+    text-decoration: none;
+}
+
+body {
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+/*--------------------------------
+        CONTACTAME SECTION 
+--------------------------------*/
+
+.container--contacto {
+    background-color: #f6f7fb;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+.container--contacto--caja {
+    width: 80vw;
+    border: 1px solid gray;
+    background-color: #fafafa;
+    padding: 2rem;
+    border-radius: 20px;
+    display: flex;
+}
+
+.contacto--contactame, .contacto--escribeme {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: flex-start;
+    width: 50%;
+    padding: 1rem;
+
+}
+
+/*--------------------------------
+            FORM 
+--------------------------------*/
+
+
+form {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 20px;
+}
+
+.contacto--escribeme--nombre, .contacto--escribeme--mensaje {
+    display: flex;
+    margin: 10px 0;
+
+}
+
+.contacto--escribeme--mensaje {
+    flex-direction: column;
+    margin: 10px 0;
+}
+
+.tag-message {
+    width: 100%;
+    height: 100px;
+    display: flex;
+    justify-content: space-around;
+    flex-direction: column;
+}
+
+input {
+    height: 40px;
+    border-radius: 25px;
+    outline: none;
+    margin-bottom: 20px;
+}
+
+.input-mensaje {
+    outline: none;
+    border-radius: 25px;
+    max-height: 100px;
+    width: 315px;
+}
+
+.button {
+    width: 80px;
+}
+
+
+
+/* label {
+    display: block;
+} */
+
+/* 
+form {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 20px;
+}
+
+label {
+    display: block;
+    margin-bottom: 10px;
+}
+
+input, textarea {
+    border-radius: 10px;
+    padding: 10px;
+    margin-bottom: 20px;
+}
+
+input[type="text"], input[type="email"] {
+    width: 300px;
+}
+
+label[for="name"], label[for="lastname"] {
+    display: flex;
+    justify-content: space-between;
+    width: 320px;
+}
+
+label[for="name"] input, label[for="lastname"] input {
+    width: calc(50% - 10px);
+}
+
+label[for="email"], label[for="mensaje"] {
+    display: block;
+    margin-bottom: 10px;
+}
+
+input[type="submit"] {
+    background-color: #4CAF50;
+    color: #fff;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 10px;
+    cursor: pointer;
+}
+
+input[type="submit"]:hover {
+    background-color: #3e8e41;
+} */
