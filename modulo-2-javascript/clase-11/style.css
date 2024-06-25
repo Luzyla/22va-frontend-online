@@ -55,7 +55,8 @@ input, textarea {
 label {
     display: block;
     margin: 1rem;
-
+    /* para separar el texto del label del input, ni padding ni margin nos ayudan, es útil utilizar el interlineado, cuya propiedad es line-height y ajustar a la separacion deseada en medidas absolutas o relativas, segun prefieran */
+    line-height: 3rem;
 }
 
 .button {
@@ -66,4 +67,13 @@ label {
 
 p {
     margin-left: 1rem;
+}
+
+input[type=checkbox] {
+    /* para reestablecer a los valores por default solo para el input de tipo checkbox, aplicar
+    height: auto; y width: auto;  */
+    height: 20px;
+    width: 20px;
+    margin-left: 0.5rem;
+    vertical-align: middle;
 }
