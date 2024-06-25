@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Clase 11 - JavaScript - Eventos del formulario</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <section class="container--contacto">
+        <div class="container--contacto--caja">
+            <div class="contacto--contactame">
+                <h3 class="title">Contactame</h3>
+                <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Atque, eius nostrum in repudiandae
+                    consequatur ipsam iste qui? Quia numquam quidem voluptatum blanditiis, corporis alias explicabo?</p>
+
+                <div class="contacto--contactame--redes">
+                    <p>🐦 Twitter</p>
+                    <p>🐈 GitHub</p>
+                    <p>📘 LinkedIn</p>
+                    <p>📩 Email</p>
+                </div>
+            </div>
+            <div class="contacto--escribeme">
+                <h3 class="title">Escribeme</h3>
+                <form action="https://portfolio.com/send/" method="get" name="form-escribeme" id="miFormulario">
+                    <div class="contacto--escribeme--nombre" id="soy-un-div">
+                        <label for="name">
+                            Nombre *
+                            <input type="text" name="name" id="name">
+                            <p id="name-p"></p>
+                        </label>
+                        <label for="lastname">
+                            Apellido *
+                            <input type="text" name="lastname" id="lastname">
+                        </label>
+                        <label for="checkbox">Checkbox
+                            <input type="checkbox" name="checkbox" id="checkbox">
+                        </label>
+                    </div>
+
+                    <div class="contacto--escribeme--mensaje">
+                        <label for="email" class="tag-message">
+                            Email *
+                            <input type="email" name="email" id="email" class="tag-message">
+                        </label>
+                        <label for="mensaje" class="tag-message">
+                            Mensaje *
+                            <textarea name="mensaje" id="mensaje" cols="30" rows="3" class="input-mensaje"></textarea>
+                        </label>
+                    </div>
+
+                    <input type="submit" name="enviar" id="enviar" value="Enviar" class="button">
+                </form>
+            </div>
+        </div>
+
+    </section>
+    <script src="main.js"></script>
+</body>
+
+</html>
