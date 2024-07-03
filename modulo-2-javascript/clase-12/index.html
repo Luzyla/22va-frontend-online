@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Clase 12 - JavaScript - Práctica</title>
+    <link rel="stylesheet" href="style.css">
+
+    <!-- dom to image -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/dom-to-image/2.6.0/dom-to-image.min.js"
+        integrity="sha512-01CJ9/g7e8cUmY0DFTMcUw/ikS799FHiOA0eyHsUWfOetgbx/t6oV4otQ5zXKQyIrQGTHSmRVPIgrgLcZi/WMA=="
+        crossorigin="anonymous"></script>
+
+    <!-- file saver -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/FileSaver.js/2.0.0/FileSaver.min.js"
+        integrity="sha512-csNcFYJniKjJxRWRV1R7fvnXrycHP6qDR21mgz1ZP55xY5d+aHLfo9/FcGDQLfn2IfngbAHd8LdfsagcCqgTcQ=="
+        crossorigin="anonymous"></script>
+</head>
+
+<body>
+    <main class="container-web">
+        <!-- DESCARGAR MEME -->
+        <div class="contenedor-meme" id="canvas-meme">
+
+            <section class="contenedor-texto" id="contenedor-texto-top">
+                <p class="texto-meme">TOP TEXT</p>
+            </section>
+
+            <section class="contenedor-imagen">
+                <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/f/f3/%D0%A4%D0%BE%D1%82%D0%BE_%D0%BA%D1%83%D0%BD%D0%BE%D0%B2.jpg/640px-%D0%A4%D0%BE%D1%82%D0%BE_%D0%BA%D1%83%D0%BD%D0%BE%D0%B2.jpg"
+                    alt="Mainecoon cat" id="imagen-meme" class="imagen-meme">
+            </section>
+
+            <section class="contenedor-texto">
+                <p class="texto-meme">BOTTOM TEXT</p>
+            </section>
+
+        </div>
+
+        <button class="button-descarga" id="button-descarga">
+            Descargar meme
+        </button>
+    </main>
+
+    <script src="app.js"></script>
+</body>
+
+</html>
