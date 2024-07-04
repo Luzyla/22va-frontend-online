@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tutoria Generador de Meme</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body class="dark-mode" id="body">
+    <header class="contenedor-encabezado">
+        <h1 class="titulo-principal">Generador de Memes</h1>
+        <nav>
+            <button class="button">
+                Imagen
+            </button>
+            <button class="button">
+                Texto
+            </button>
+            <button id="dark-mode" class="hidden button">
+                Modo oscuro
+            </button>
+            <button id="light-mode" class="button">
+                Modo claro
+            </button>
+        </nav>
+    </header>
+    <main class="container-web">
+        <!-- CANVAS -->
+        <div class="contenedor-meme" id="canvas-meme">
+
+            <section class="contenedor-texto">
+                <p class="texto-meme">TOP TEXT</p>
+            </section>
+
+            <section class="contenedor-imagen">
+                <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/f/f3/%D0%A4%D0%BE%D1%82%D0%BE_%D0%BA%D1%83%D0%BD%D0%BE%D0%B2.jpg/640px-%D0%A4%D0%BE%D1%82%D0%BE_%D0%BA%D1%83%D0%BD%D0%BE%D0%B2.jpg"
+                    alt="" id="imagen-meme">
+            </section>
+
+            <section class="contenedor-texto">
+                <p class="texto-meme">BOTTOM TEXT</p>
+            </section>
+
+        </div>
+
+        <!-- DESCARGAR MEME -->
+        <button class="button-descarga button" id="button-descarga">
+            <img src="./images/icons8-download-white.png" alt="icon descargas" class="icon-descarga"> Descargar meme
+        </button>
+
+
+    </main>
+    <script src="main.js"></script>
+</body>
+
+</html>

@@ -1,0 +1,111 @@
+.dark-mode {
+    --color-1: #FFE0E9;
+    --color-2: #602437;
+    --color-3: #8A2846;
+    --color-4: #B9375E;
+    --color-5: #E05780;
+    --color-6: #FF7AA2;
+    --color-7: #FF9EBB;
+    --color-8: #FFC2D4;
+    --color-9: #522E38;
+}
+
+.light-mode {
+    --color-1: #FF0A54;
+    --color-2: #FF477E;
+    --color-3: #FF5C8A;
+    --color-4: #FF7096;
+    --color-5: #FF85A1;
+    --color-6: #FF99AC;
+    --color-7: #FBB1BD;
+    --color-8: #F9BEC7;
+    --color-9: #FAE0E4;
+}
+
+body {
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    background-color: var(--color-2);
+    height: 100vh;
+}
+
+/* HEADER */
+.contenedor-encabezado {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    min-height: 20vh;
+}
+
+.titulo-principal {
+    color: var(--color-9);
+}
+
+.button {
+    margin: 1rem;
+    background-color: var(--color-4);
+    color: var(--color-8);
+    border: 1px solid;
+    border-radius: 8px;
+    padding: 0.8rem;
+    font-size: 1rem;
+    font-weight: bold;
+}
+
+/* MAIN */
+
+.container-web {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.contenedor-meme, .contenedor-texto, .contenedor-imagen {
+    display: flex;
+    flex-direction: column;
+}
+
+.contenedor-meme {
+    width: 500px;
+    height: 600px;
+    background-color: var(--color-4);
+}
+
+.contenedor-texto {
+    height: 100px;
+    background-color: var(--color-4);
+    align-items: center;
+    justify-content: center;
+}
+
+.contenedor-imagen {
+    height: 90%;
+}
+
+.texto-meme {
+    color: var(--color-7);
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    text-align: center;
+    font-weight: bold;
+}
+
+.button-descarga {
+    display: flex;
+    align-items: center;
+    padding: 1rem;
+    gap: 0.5rem;
+    margin: 1rem;
+    background-color: var(--color-4);
+    color: var(--color-8);
+    border: 1px solid;
+    border-radius: 8px;
+}
+
+.icon-descarga {
+    width: 20px;
+}
+
+.hidden {
+    display: none;
+}
