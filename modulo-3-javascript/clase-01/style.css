@@ -1,0 +1,79 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-size: 1.5rem;
+}
+
+.fondo {
+    background-color: blueviolet;
+    height: 300px;
+}
+
+.hidden {
+    display: none;
+}
+
+.cambiar-background {
+    background-color: crimson;
+}
+
+.container--contacto {
+    margin: 2rem;
+}
+
+.title {
+    font-size: 2.2rem;
+    padding: 1rem;
+}
+
+.contacto--contactame, .contacto--contactame--redes, .contacto--escribeme {
+    margin: 2rem;
+}
+
+input {
+    height: 40px;
+}
+
+input, textarea {
+    padding: 1rem;
+    width: 300px;
+    border-radius: 8px;
+    border: 2px solid pink;
+}
+
+.input-mensaje:focus-visible {
+    outline: none;
+    border-color: purple;
+    background-color: crimson;
+}
+
+label {
+    display: block;
+    margin: 1rem;
+    /* para separar el texto del label del input, ni padding ni margin nos ayudan, es útil utilizar el interlineado, cuya propiedad es line-height y ajustar a la separacion deseada en medidas absolutas o relativas, segun prefieran */
+    line-height: 3rem;
+}
+
+.button {
+    font-size: 1.2rem;
+    height: 65px;
+    font-weight: bold;
+}
+
+p {
+    margin-left: 1rem;
+}
+
+input[type=checkbox] {
+    /* para reestablecer a los valores por default solo para el input de tipo checkbox, aplicar
+    height: auto; y width: auto;  */
+    height: 20px;
+    width: 20px;
+    margin-left: 0.5rem;
+    vertical-align: middle;
+}
