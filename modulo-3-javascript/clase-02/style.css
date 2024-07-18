@@ -1,0 +1,32 @@
+.modo-claro {
+    --color-1: crimson;
+    --color-2: #fafafa;
+}
+
+.modo-oscuro {
+    --color-1: blueviolet;
+    --color-2: #656565;
+}
+
+.main {
+    background-color: var(--color-2);
+    color: var(--color-1);
+}
+
+.button {
+    background-color: var(--color-1);
+    color: var(--color-2);
+}
+
+.title {
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+
+.text {
+    font-family: Georgia, 'Times New Roman', Times, serif;
+}
+
+.fuente-alternativa {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-weight: bold;
+}
