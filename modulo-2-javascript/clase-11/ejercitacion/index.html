@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/style.css">
+    <title>Ejercitacion</title>
+</head>
+<body>
+
+    <form action="#" method="get">
+        <label for="texto"></label>
+        <input type="text" name="texto" id="texto">
+    </form>
+
+    <h1>Hola soy el titulo</h1>
+
+    <button>Mostrar</button>
+
+    <script src="main.js"></script>
+
+    <script>
+        let h1 = document.querySelector('h1');
+
+        let button = document.querySelector('button');
+            button.addEventListener('click', () => {
+                h1.classList.toggle('hidden')
+            })
+    </script>
+</body>
+</html>

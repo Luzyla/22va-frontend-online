@@ -1,0 +1,25 @@
+/* 1) Se ponen todos los imports de fuentes */
+
+/* 2) :root */
+
+:root {
+    /* Para declarar una variable en el root lo hacemos de la siguiente manera */
+    --bg-principal: #CDB4DB;
+    --color-primario: #FFAFCC;
+    --color-secundario: #A2D2FF;
+}
+
+/* 3) Selector universal */
+
+/* 4) Todo mi css re copado re loco */
+
+form {
+    height: 100px;
+    background-color: var(--bg-blue);
+}
+
+.hidden {
+    display: none;
+}
+
+/* 5) Las media querys que nadie quiere ver ni entender porque son un bajon para eso tenemos los frameworks */
