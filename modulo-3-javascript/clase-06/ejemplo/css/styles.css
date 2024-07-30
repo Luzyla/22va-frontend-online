@@ -1,9 +1,0 @@
-.navBarExapand {
-    height: calc(100vh - 32px - 2rem);
-}
-
-.list-benefit::before {
-    content: url('../assets/images/coin-marker.svg');
-    width: 24px;
-    height: 24px;
-}
