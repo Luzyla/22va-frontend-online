@@ -1,0 +1,26 @@
+> ¿Que es Tailwind CSS?
+    * Tailwind es un framework CSS con clases preconstruidas que nos permiten estilar elementos HTML de una forma mas rápida.
+
+> Ventajas
+    * Agiliza los tiempos de maquetado
+    * Utiliza estilos que son estandarizados, para abarcar la mayoria de dispositivos
+    * Es adaptable a las necesidades de cada desarrollador
+
+> Bases
+    Instalacion
+    * Por el momento vamos a utilizar el CDN... mas adelante lo vamos a utilizar como plugin mediante un proyecto con base en vite.
+
+    Colores
+    Tamaños
+    Pseudo-clases
+    Responsive
+    Flex
+    // Grid
+
+> Conceptos
+    * Atomic CSS
+        Cada clase tiene una aplicación especifica y su nombre se asocia a su propiedad.
+
+> Material de Lectura
+    * https://www.freecodecamp.org/espanol/news/que-es-tailwind-css-guia-para-principiantes/
+    * https://css-tricks.com/lets-define-exactly-atomic-css/
