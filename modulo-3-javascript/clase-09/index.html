@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://cdn.tailwindcss.com"></script>
+    <title>Document</title>
+</head>
+<body class="flex flex-col gap-5 items-center justify-center min-h-screen">
+    <div>
+        <button class="flex gap-2 rounded-lg items-center bg-blue-400 py-2 px-4 cursor-pointer hover:bg-blue-600 transition transition-all text-white hover:text-gray-200">
+            <span class="text-xl">
+                Enviar
+            </span>
+            <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-send" width="24" height="24" viewBox="0 0 24 24" stroke-width="1.5" stroke="#FFF" fill="none" stroke-linecap="round" stroke-linejoin="round">
+                <path stroke="none" d="M0 0h24v24H0z" fill="none"/>
+                <path d="M10 14l11 -11" />
+                <path d="M21 3l-6.5 18a.55 .55 0 0 1 -1 0l-3.5 -7l-7 -3.5a.55 .55 0 0 1 0 -1l18 -6.5" />
+            </svg>
+        </button>
+    </div>
+    <div>
+        <a href="#productos" class="flex gap-2 rounded-lg items-center bg-blue-400 py-2 px-4 cursor-pointer hover:bg-blue-600 transition transition-all text-white hover:text-gray-200">Enviar</a>
+    </div>
+    <div>
+        <button class="flex gap-2 rounded-lg items-center bg-red-400 py-2 px-4 cursor-pointer hover:bg-red-600 transition transition-all text-white hover:text-gray-200">
+            <span class="text-xl">
+                Eliminar
+            </span>
+            <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-trash" width="24" height="24" viewBox="0 0 24 24" stroke-width="1.5" stroke="#2c3e50" fill="none" stroke-linecap="round" stroke-linejoin="round">
+                <path stroke="none" d="M0 0h24v24H0z" fill="none"/>
+                <path d="M4 7l16 0" />
+                <path d="M10 11l0 6" />
+                <path d="M14 11l0 6" />
+                <path d="M5 7l1 12a2 2 0 0 0 2 2h8a2 2 0 0 0 2 -2l1 -12" />
+                <path d="M9 7v-3a1 1 0 0 1 1 -1h4a1 1 0 0 1 1 1v3" />
+              </svg>
+        </button>
+    </div>
+    <input class="input" type="date" name="" id="filtro-fecha">
+
+    <script>
+        let date_input = document.querySelector('#filtro-fecha')
+        
+        let date = new Date()
+        let day = date.getDate()
+        let month = date.getMonth() + 1
+        let year = date.getFullYear()
+
+        if(month < 10 && day < 10){
+            // console.log(`0${day}/0${month}/${year}`)
+            date_input.setAttribute('value',`${year}-0${month}-0${day}` )
+        }else{
+            // console.log(`${day}/${month}/${year}`)
+            date_input.setAttribute('value', `${year}-${month}-${day}`)
+        }
+    </script>
+</body>
+</html> 
